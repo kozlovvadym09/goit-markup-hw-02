@@ -19,9 +19,9 @@ body {
    font-size: 26px;
    line-height: 31px;
    letter-spacing: 0.03em;
-   color: #000000;;
+   color:  #000000;
 }
-span {
+.navigation-logo-color {
    color: #2196F3;
 }
 .navigation-list-link {
@@ -30,6 +30,9 @@ span {
    line-height: 16px;
    letter-spacing: 0.02em;
    color: #212121;
+}
+.navigation-list-link {
+   color: #2196F3;
 }
 .sublist-item-mail,
 .sublist-item-tel {
@@ -157,6 +160,40 @@ span {
    color: #2196F3;
 }
 /* ======== END FOOTER ======== */
+
+
+
+/* ======== HERO-Portfolio ======== */
+.navigation-option-btn {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 26px;
+   letter-spacing: 0.03em;
+   color: #212121;
+}
+
+/* ======== END HERO-Portfolio ======== */
+
+
+
+/* ======== PROJECTS GALLERY/Section ======== */
+.projects-name {
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 2.00;
+   letter-spacing: 0.06em;
+   color: #212121;
+}
+.projects-typ {
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 1.875;
+   letter-spacing: 0.03em;
+   color: #757575;
+}
+
+/* ======== END PROJECTS GALLERY/Section ======== */
+
 
 
 
