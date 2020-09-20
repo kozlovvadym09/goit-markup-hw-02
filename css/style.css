@@ -1,16 +1,20 @@
 :root {
+   --main-font: Roboto, sans-serif;
+   --secondary-font: Raleway, sans-serif;
    --titel-text-color: #212121;
    --primary-text-color:  #757575;
-   --contacts-text-color: rgba(255, 255, 255, 0.6);
+   --secondary-text-color: rgba(255, 255, 255, 0.6);
    --primary-bg-color: #E5E5E5;
+   --secondary-bg-color: #F5F4FA;
    --header-bg-color: #FFFFFF;
+   --hero-bg-color: #2F303A;
    --footer-bg-color: #2F303A;
+   --accent-color: #2196F3;
 }
 
 
 body {
-   font-family: "Roboto", sans-serif;
-   font-style: normal;
+   font-family: var(--main-font);
 }
 .list {
    list-style: none;
@@ -18,6 +22,22 @@ body {
 .link {
    text-decoration: none;
 }
+.header {
+   background-color: var(--header-bg-color);
+}
+.contact-bright-bg {
+   color: var(--primary-text-color); 
+}
+.contact-dark-bg {
+   color: var(--secondary-text-color);
+}
+.hero {
+   background-color: var(--hero-bg-color);
+}
+/*.option-button {
+
+}*/
+
 
     
 
@@ -49,8 +69,7 @@ body {
    color: #2196F3;
 }
 
-.sublist-item-mail,
-.sublist-item-tel {
+.contact-bright-bg {
    font-weight: 500;
    font-size: 14px;
    line-height: 1.143;
@@ -59,10 +78,8 @@ body {
 }
 .navigation-list-link:hover,
 .navigation-list-link:focus,
-.sublist-item-mail:hover,
-.sublist-item-mail:focus,
-.sublist-item-tel:hover,
-.sublist-item-tel:focus {
+.contact-bright-bg:hover,
+.contact-bright-bg:focus {
    color: #2196F3;
 }
 
@@ -79,7 +96,7 @@ body {
    line-height: 1.364;  
    letter-spacing: 0.06em;
    text-transform: uppercase;
-   /*color: #FFFFFF;*/
+   color: #FFFFFF;
 }
 .modal-button {
    font-family: Roboto, sans-serif;
@@ -88,8 +105,11 @@ body {
    font-size: 16px;
    line-height: 1.875;
    letter-spacing: 0.06em;
-   /*color: #FFFFFF;*/
+   color: #FFFFFF;
+   background-color: #2196F3;
+   
 }
+
 /* ======== END HERO-Section1 ======== */
 
 
@@ -115,17 +135,22 @@ body {
 
 
 
-/* ======== ABOUT-Section3 ======== */
+/* ======== ABOUT-Section 3 ======== */
+
 .about-desc {
    font-weight: bold;
    font-size: 36px;
    line-height: 1.167;
    color: #212121;
 }
-/* ======== END ABOUT-Sectio3 ======== */
+/* ======== END ABOUT-Sectio 3 ======== */
 
 
-/* ======== TEAM-Section4 ======== */
+/* ======== TEAM-Section 4 ======== */
+
+.team {
+   background-color: var(--secondary-bg-color);
+}
 .team-staff {
    font-weight: bold;
    font-size: 36px;
@@ -147,39 +172,45 @@ body {
    letter-spacing: 0.03em;
    color: #757575;
 }
-/* ======== END TEAM-Sectio4 ======== */
+/* ======== END TEAM-Sectio 4 ======== */
 
 /* ======== FOOTER ======== */
+
 .logo-footer {
+   font-family: Raleway, sans-serif;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 26px;
+   line-height: 1.191;
+   letter-spacing: 0.03em;
+   color: #FFFFFF;
+}
+.contact-dark-bg {
+   font-family: Roboto, sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 1.713;
+   letter-spacing: 0.03em;
+}
+.contact-map {
+   font-family: Roboto, sans-serif;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 1.713;
+   letter-spacing: 0.03em;
    color: #FFFFFF;
 }
 
-.address-map-link {
-   font-family: Roboto, sans-serif;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 14px;
-   line-height: 1.713;
-   letter-spacing: 0.03em;
-   /*color: #FFFFFF;*/
-}
-.address-contact-link {
-   font-family: Roboto, sans-serif;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 14px;
-   line-height: 1.713;
-   letter-spacing: 0.03em;
-   /*color: rgba(255, 255, 255, 0.6);*/
-}
-.address-map-link:hover,
-.address-map-link:focus,
-.address-contact-link:hover,
-.address-contact-link:focus {
+.contact-map:hover,
+.contact-map:focus,
+.contact-dark-bg:hover,
+.contact-dark-bg:focus {
    color: #2196F3;
 }
 .footer {
-   background-color: #2F303A;
+   background-color: var(--footer-bg-color);
 }
 /* ======== END FOOTER ======== */
 
@@ -187,6 +218,8 @@ body {
 
 /* ======== PORTFOLIO ======== */
 .option-button {
+   font-family: Roboto, sans-serif;
+   font-style: normal;
    font-weight: 500;
    font-size: 16px;
    line-height: 1.625;
@@ -195,7 +228,7 @@ body {
 }
 .option-button:hover,
 .option-button:focus {
-   color: #2196F3;
+   color: #FFFFFF;
 } 
 
 
