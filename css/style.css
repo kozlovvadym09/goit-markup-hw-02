@@ -22,8 +22,17 @@ body {
 .link {
    text-decoration: none;
 }
+.background-color {
+   color: var(--primary-bg-color);  
+}
+.navigation .navigation-list-link.current {
+color: var(--accent-color);
+}
 .header {
    background-color: var(--header-bg-color);
+}
+.logo-accent {
+color: var(--accent-color)
 }
 .contact-bright-bg {
    color: var(--primary-text-color); 
@@ -54,10 +63,6 @@ body {
    letter-spacing: 0.03em;
    color: #000000;
 }
-.logo-item {
-   color: #2196F3;
-}
-
 .navigation-list-link {
    font-weight: 500;
    font-size: 14px;
@@ -65,10 +70,6 @@ body {
    letter-spacing: 0.02em;
    color: #212121;
 }
-.navigation-list .link.current {
-   color: #2196F3;
-}
-
 .contact-bright-bg {
    font-weight: 500;
    font-size: 14px;
@@ -185,7 +186,8 @@ body {
    letter-spacing: 0.03em;
    color: #FFFFFF;
 }
-.contact-dark-bg {
+.contact-dark-bg,
+.contact-map {
    font-family: Roboto, sans-serif;
    font-style: normal;
    font-weight: normal;
@@ -194,12 +196,6 @@ body {
    letter-spacing: 0.03em;
 }
 .contact-map {
-   font-family: Roboto, sans-serif;
-   font-style: normal;
-   font-weight: normal;
-   font-size: 14px;
-   line-height: 1.713;
-   letter-spacing: 0.03em;
    color: #FFFFFF;
 }
 
@@ -229,6 +225,7 @@ body {
 .option-button:hover,
 .option-button:focus {
    color: #FFFFFF;
+   background-color: var(--accent-color);
 } 
 
 
